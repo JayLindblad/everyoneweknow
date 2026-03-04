@@ -27,6 +27,10 @@
     padding: 40px 20px;
   }
 
+  @media (max-width: 480px) {
+    body { padding: 20px 12px; }
+  }
+
   .page {
     width: 100%;
     max-width: 680px;
@@ -51,6 +55,10 @@
     padding: 48px 48px 40px;
     position: relative;
     box-shadow: 6px 6px 0 var(--black);
+  }
+
+  @media (max-width: 480px) {
+    .poster { padding: 36px 24px 28px; }
   }
 
   .stamp {
@@ -177,6 +185,10 @@
     gap: 10px;
   }
 
+  @media (max-width: 480px) {
+    .perks-grid { grid-template-columns: 1fr; }
+  }
+
   .perk {
     border: 1.5px solid var(--black);
     padding: 12px 14px;
@@ -215,6 +227,15 @@
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
+  }
+
+  @media (max-width: 480px) {
+    .cta { flex-direction: column; align-items: flex-start; }
+    .cta-btn { width: 100%; text-align: center; }
+    .cta-text { max-width: 100%; }
+    .stamp { font-size: 11px; top: 14px; right: 14px; }
+    .ask { font-size: 13px; }
+    .concept { font-size: 15px; }
   }
 
   .cta-text {
@@ -308,11 +329,7 @@
 
     <div class="cta">
       <p class="cta-text">No commitment to say yes. Just reach out and we can chat about it — worst case you hear a fun idea.</p>
-      <a class="cta-btn" href="mailto:thisisjaybytheway@gmail.com">I'M IN</a>
+      <a class="cta-btn" href="mailto:thisisjaybytheway@gmail.com"></a>
     </div>
 
-    <p class="footer-note">Connections await &nbsp;·&nbsp; Wristbands provided &nbsp;·&nbsp; Chaos guaranteed</p>
-  </div>
-</div>
-</body>
-</html>
+    <p class="footer-note">Powered by Partiful &nbsp;·&nbsp; Wristbands provided &
